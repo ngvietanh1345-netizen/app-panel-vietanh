@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu Hình Phản Hồi Màn Hình</title>
+    <!-- Giao diện tối mượt mà bằng Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0b0f19; }
+    </style>
+</head>
+<body class="text-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-md bg-gray-900 rounded-2xl shadow-2xl border border-orange-500/30 p-6">
+        
+        <!-- Tiêu đề -->
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-black text-orange-500 tracking-wider">HỆ THỐNG GHÌM TÂM</h1>
+            <p class="text-xs text-gray-400 mt-1">Tối ưu hóa phản hồi cảm ứng hệ thống</p>
+        </div>
+
+        <!-- Trạng thái kết nối -->
+        <div class="bg-gray-800/50 border border-gray-750 p-4 rounded-xl mb-6 flex justify-between items-center">
+            <div>
+                <span class="text-xs text-gray-400 block font-medium">TRẠNG THÁI</span>
+                <span class="text-sm font-bold text-green-400 flex items-center gap-1.5">
+                    <span class="h-2 w-2 rounded-full bg-green-500 animate-pulse"></span> Hoạt Động
+                </span>
+            </div>
+            <div class="text-right">
+                <span class="text-xs text-gray-400 block font-medium">PHIÊN BẢN</span>
+                <span class="text-sm font-mono font-bold text-orange-400">v4.0.2</span>
+            </div>
+        </div>
+
+        <!-- Danh sách cấu hình -->
+        <div class="space-y-4">
+            
+            <!-- Mục tải cấu hình duy nhất của bạn -->
+            <div class="bg-gray-800/40 border border-gray-700/50 p-4 rounded-xl flex justify-between items-center hover:border-orange-500/20 transition-all">
+                <div>
+                    <h3 class="font-bold text-orange-400">Cấu Hình Kéo Tâm</h3>
+                    <p class="text-xs text-gray-400 mt-0.5">Tối ưu hóa độ nhạy và ổn định hồng tâm</p>
+                </div>
+                <button onclick="taiConfig('panel_vietnh_ios')" class="bg-orange-500 hover:bg-orange-600 text-black font-extrabold text-xs px-4 py-2.5 rounded-lg active:scale-95 transition-transform">
+                    CÀI ĐẶT
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Hướng dẫn nhanh -->
+        <div class="mt-6 pt-5 border-t border-gray-800 text-center">
+            <p class="text-[11px] text-gray-500 leading-relaxed">
+                Sau khi nhấn "Cài đặt", vui lòng vào <br>
+                <span class="text-gray-400 font-semibold">Cài đặt -> Đã tải về hồ sơ</span> trên thiết bị để kích hoạt.
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        // Hàm tải file cấu hình tương ứng với tên file bạn đã upload lên GitHub
+        function taiConfig(tenFile) {
+            alert("Đang khởi tạo cấu hình tối ưu cảm ứng...");
+            window.location.href = "/" + tenFile + ".mobileconfig";
+        }
+    </script>
+</body>
+</html>
