@@ -3,7 +3,8 @@ import os
 from flask import Flask
 
 # Token chuẩn của bồ
-TOKEN = '8859495272:AÂEsFlB3L5sTzS3AEoFublF1qjZxAlBU'
+TOKEN = '8859495272:AAEsFlB3L5sTzS3AEoFublF1qjZxAlBU
+IGO
 
 
 bot = telebot.TeleBot(TOKEN)
