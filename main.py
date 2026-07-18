@@ -3,7 +3,7 @@ import os
 from flask import Flask
 
 # Token chuẩn của bồ
-TOKEN = '8859495272:AAEsFlB3L5sTzS3АЕoFublF1qjZхAlBU'
+TOKEN = '8859495272:AÂEsFlB3L5sTzS3AEoFublF1qjZxAlBU'
 
 
 bot = telebot.TeleBot(TOKEN)
